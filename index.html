@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transform Your Airbnb with AI </title>
+<title>Listing Optimization, Visual Descriptions & Management</title>
+    <style>
+        /* General Body Style */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F9FAFB;
+            color: #808080;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Frame Styling for Cover Image */
+        .cover-frame {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid #0056b3; /* Frame border color */
+            border-radius: 10px;
+            padding: 10px;
+            margin: 0 auto;
+            max-width: 90%; /* Maximum width for desktop */
+            background-color: #ffffff; /* Optional background for frame */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Cover Image Styling */
+        .cover-image {
+            max-width: 100%; /* Image scales with frame */
+            height: auto; /* Maintains aspect ratio */
+            border-radius: 8px;
+        }
+		/* Title Styling */
+        .cover-title {
+            text-align: center;
+            font-size: 1.8em;
+            font-weight: bold;
+            margin: 15px 0;
+            color: #808080;
+        }
+
+        /* Button Style */
+        .print-button {
+            background-color: #808080;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 5px;
+            display: block;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .print-button:hover {
+            background-color: #cc4629;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .cover-title {
+                font-size: 1.5em;
+            }
+            .cover-frame {
+                padding: 8px;
+            }
+        }
+   
+        /* Main Title */
+        h1.cover-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        /* Section Titles */
+        h2 {
+            font-size: 18px;
+            color: #808080;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        /* Styled Section Containers */
+        .section {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* Table Style */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        /* Code Block Style */
+        .code-box {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            font-family: monospace;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+
+        /* Modal styling */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            padding-top: 50px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            display: block;
+            margin: auto;
+            max-width: 90%;
+            max-height: 80%;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Button Style */
+        .copy-button, .print-button {
+            background-color: ##008080;
+            color: ##808080;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .copy-button:hover, .print-button:hover {
+            background-color: #008080;
+        }
+
+        /* Print-specific styling */
+        @media print {
+            .print-button {
+                display: none;
+            }
+        }
+		@media print {
+    .page-break {
+        page-break-before: always;
+    }
+}
+		<style>
+    /* CSS for page breaks when printing */
+    .page-break {
+        page-break-before: always; /* or page-break-after: always; */
+    }
+
+
+    </style>
+</head>
+<body>
+   <!-- Print Button -->
+    <button class="print-button" onclick="window.print()">Print Report</button>
+
+    <!-- Cover Title and Image Frame -->
+    <div class="cover-frame">
+        <img src="cover.jpg" alt="Cover for Transform Your Airbnb with AI" class="cover-image">
+    </div>
+   <div class="page-break"></div>
+    <div class="cover-title">Transform Your Airbnb listing with AI </div>
+    <div class="cover-title">Image Optimization, Visual Descriptions & Management</div>
+
+  
+
+    <!-- Modal for enlarged image -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="imgModalContent">
+    </div>
+
+
+      <!-- Project Introduction Section -->
+    <div class="section">
+        <h2>Introduction</h2>
+        <p><strong>Project Name:</strong> Learn how AI prompts can enhance your Airbnb listing images and what to expect in this guide—prompts to use for Airbnb listing images for AI Optimization.
+In this project, we dive into how artificial intelligence (AI) can help you optimize your Airbnb listing  Let's explore the possibilities together!
+	</p>
+    </div>
+
+  <!-- More in depth -->
+    <div class="section">
+        <h2>Images</h2>
+        <ul>
+            <li>Make images more appealing to potential guests and boosting your booking rate.</li>
+            <li>Enhance listing images is a game changer for hosts.</li>
+            <li>Well-crafted visuals convey warmth, elegance, and the unique personality of your space.</li>
+            <li>Prompts are tailored to help you adjust key elements like lighting, color balance, and texture.</li>
+            <li>Expect to learn practical skills for using AI-based image enhancement tools to elevate the quality of your Airbnb 
+            photos</li>
+	    <li>Step-by-step instructions for applying prompts to achieve different aesthetics, such as enhancing brightness, 
+            highlighting key features, or balancing shadows for a more refined look.</li>
+	    <li>Leverage AI prompts, and take your listing to the next level—attracting more guests and ultimately increasing 
+            your occupancy rate.</li>
+       </ul>
+    </div>
+
+	
+    <!-- Instructions for Using the Prompts Section -->
+    <div class="section">
+        <h2>Instructions for Using the Prompts</h2>
+        <ul>
+            <li>Copy the desired prompt. Use the button |Copy code|</li>
+            <li>Open your AI tool e.g., ChatGPT</li>
+            <li>Paste the prompt and customize any placeholders alongside your image</li>
+            <li>Download the enhanced image and upload it to your listing</li>
+            <li>Copy the visual description and add it to the image uploaded into the listing</li>
+        </ul>
+    </div>
+
+    <!-- Example Prompt Section with Copy Blocks -->
+    <!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--  -->
+<!-- Container to hold the dynamically generated prompts -->
+    <div id="copyBlocksContainer" class="section">
+        <h2>Examples</h2>
+    </div>
+
+    <!-- JavaScript to Load JSON Data and Populate Copy Blocks -->
+    <script>
+        async function loadPrompts() {
+            try {
+                // Fetch the prompts from the JSON file
+                const response = await fetch('prompts.json');
+                const prompts = await response.json();
+                
+                // Find the container where copy blocks will be added
+                const container = document.getElementById("copyBlocksContainer");
+                
+                // Clear existing content (in case of reloading)
+                container.innerHTML += ''; // Title is already included in the container
+                
+                // Loop through the prompts and create HTML for each one
+                prompts.forEach(prompt => {
+                    // Create a container div for each prompt
+                    const section = document.createElement('div');
+                    section.className = 'section';
+                    
+                    // Add the prompt example title
+                    const title = document.createElement('h3');
+                    title.textContent = `Prompt Example #${prompt.id}`;
+                    section.appendChild(title);
+                    
+                    // Add the prompt text in a code box
+                    const codeBox = document.createElement('div');
+                    codeBox.className = 'code-box';
+                    codeBox.id = `code${prompt.id}`;
+                    codeBox.textContent = prompt.text;
+                    section.appendChild(codeBox);
+                    
+                    // Add a copy button for each prompt
+                    const copyButton = document.createElement('button');
+                    copyButton.className = 'copy-button';
+                    copyButton.textContent = 'Copy Code';
+                    copyButton.onclick = () => copyToClipboard(codeBox.id);
+                    section.appendChild(copyButton);
+                    
+                    // Append the section to the main container
+                    container.appendChild(section);
+                });
+            } catch (error) {
+                console.error("Error loading prompts:", error);
+            }
+        }
+
+        // Function to copy text to clipboard
+        function copyToClipboard(elementId) {
+            const text = document.getElementById(elementId).textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                alert("Text copied to clipboard!");
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        }
+
+        // Load prompts on page load
+        window.onload = loadPrompts;
+    </script>
+
+ <!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-- Contact Section -->
+    <!-- Contact Section -->
+    <div class="section">
+        <h2>Contact</h2>
+        <p>Email: airbnbMontreal@gmail.com</p>
+        <p>Social Media: @AnnaSuperHost</p>
+    </div>
+ <!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-- Disclaimer -->
+    <!-- Disclaimer: -->
+    <div class="section">
+	     <h2>Disclaimer</h2>
+	    </p>
+This project is provided for educational and informational purposes only. While every effort has been made to ensure the accuracy of the content, the author cannot provide any guarantees regarding the latest changes in AI tools, their functionalities, or availability. AI tools, platforms, and features are subject to frequent updates and modifications, which may affect their availability as free or premium versions. Users are encouraged to verify the current status and terms of use directly from the service providers. The author is not responsible for any changes that may impact the usability, performance, or cost of the mentioned AI tools.  </p>
+    </div>
+  
+
+</body>
+</html>
